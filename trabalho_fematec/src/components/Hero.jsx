@@ -1,5 +1,4 @@
 import React from "react";
-import lamp from "../assets/Lamp.gif";
 import { useNavigate } from 'react-router-dom';
 import {useTypewriter} from "react-simple-typewriter";
 
@@ -17,7 +16,7 @@ const Hero = () => {
     })
 
     return (
-        <div className="text-white bg-no-repeat bg-right-bottom" style={{ backgroundImage: `url("${lamp}")` }}>
+        <div className="text-white">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
                 <p className="text-[#00df9a] font-bold p-2">Pensando em eficiência energética ?</p>
                 <h1 className="md: text-7xl sm:text-6xl font-bold m:py-6">Não faça a escolha errada.</h1>
