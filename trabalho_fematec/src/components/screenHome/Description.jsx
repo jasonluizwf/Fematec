@@ -1,5 +1,5 @@
 import React from "react";
-import fLuz from "../assets/manLight.png"
+import fLuz from "../../assets/manLight.png"
 
 
 const Description = () => {
