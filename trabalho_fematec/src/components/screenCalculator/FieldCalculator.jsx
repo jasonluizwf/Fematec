@@ -43,7 +43,7 @@ const FieldCalculator = () => {
             <form onSubmit={calculoEficiencia} >
                 <div className="grid grid-rows-2 grid-flow-col gap-4 rounded-md backdrop-blur-md bg-[#b6b6b6] p-10 bg-opacity-30" >
                     <div className="grid justify-center">
-                        <label className=" font-bold ">Tarifa Média</label>
+                        <label className=" font-bold ">Tarifa Média (Kw/H)</label>
                         <input
                             className="p-3 m-3 rounded-md"
                             type="number"
@@ -64,7 +64,7 @@ const FieldCalculator = () => {
                     </div>
 
                     <div className="grid">
-                        <label className=" font-bold ">Potência da Lâmpada</label>
+                        <label className=" font-bold ">Potência da Lâmpada de LED</label>
                         <input
                             className="p-3 m-3 rounded-md"
                             type="number"
@@ -88,8 +88,8 @@ const FieldCalculator = () => {
                 </div>
             </form>
         </div>
-        <div className="w-full py-[7cm] px-4 bg-white " style={{ backgroundImage: `url(${bckGround})`}} ref={lastDivRef}>
-            <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8" >
+        <div className="w-full py-[7cm] px-4 bg-white " style={{ backgroundImage: `url(${bckGround})`}} >
+            <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8"ref={lastDivRef} >
                 <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-3xl hover:scale-105 duration-300 backdrop-blur">
                     <img className="mx-auto mt-[-3rem] hover:brightness-200" src={lampOff} alt="a" />
                     <h2 className="text-2xl font-bold text-center py-8">Lampada Led</h2>
